@@ -2,7 +2,7 @@
   "name": "carrer-guid-fe",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://velmuruganmahalingam.github.io/carrer-guide-rrc",
+  "homepage": "https://velmuruganmahalingam.github.io/career-guide-rrc",
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
