@@ -171,9 +171,9 @@ const LogoSliderWithPopup = ({ items, title = "Our Partners" }) => {
         };
 
         // Add event listeners directly to the document
-        document.addEventListener('mousedown', handleMouseDown);
-        document.addEventListener('mousemove', handleMouseMove);
-        document.addEventListener('mouseup', handleMouseUp);
+        scrollContainer.addEventListener('mousedown', handleMouseDown);
+        scrollContainer.addEventListener('mousemove', handleMouseMove);
+        scrollContainer.addEventListener('mouseup', handleMouseUp);
 
         // --- CLEANUP ---
         return () => {
