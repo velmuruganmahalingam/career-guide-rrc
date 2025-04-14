@@ -3,6 +3,7 @@ import Navbar from "./components/navbar";
 import Footer from './components/footer';
 import HeroSlider from './components/herosection';
 import CareerSupportSection from "./components/CareerSupportSection";
+import CourseExplorer from "./components/CourseExplorer"; // Import the new component
 import LogoSliderWithPopup from "./components/LogoSliderWithPopup";
 import TeamSection from './components/teamSection';
 import EnquiryForm from './components/EnquiryForm';
@@ -10,6 +11,9 @@ import img1 from "./assets/1.jpeg";
 import img2 from "./assets/2.jpeg";
 import img3 from "./assets/3.jpeg";
 import md from "./assets/md.jpeg";
+import { motion } from 'framer-motion';
+import { FaEye, FaBullseye } from "react-icons/fa";
+
 function App() {
   const slides = [
     {
@@ -90,8 +94,63 @@ function App() {
           ctaLink="/courses"
         /> */}
       <HeroSlider slides={slides} />
+      <section className="py-4 bg-gradient-to-br from-gray-50 via-white to-gray-100">
+        <div className="max-w-7xl mx-auto px-4">
+          <motion.div
+            className="text-center mb-12"
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
+            <h2 className="text-4xl font-bold mb-4">
+              Our Vision & Mission
+            </h2>
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              Discover the heart and soul of RRC Career — where dreams meet direction.
+            </p>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            {/* Vision */}
+            <motion.div
+              className="bg-white border-l-8 border-blue-500 shadow-xl rounded-2xl p-8 hover:shadow-blue-100 transition-shadow"
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              viewport={{ once: true }}
+            >
+              <div className="flex items-center gap-4 mb-4">
+                <FaEye className="text-blue-500 text-3xl" />
+                <h3 className="text-2xl font-semibold text-blue-700">Our Vision</h3>
+              </div>
+              <p className="text-gray-600 mb-4">
+                To be a globally recognized educational guidance platform that empowers individuals to achieve academic and professional excellence through informed choices, innovation, and integrity. We envision a world where every student, regardless of background, has access to personalized, high-quality mentorship and career support.
+              </p>
+            </motion.div>
+
+            {/* Mission */}
+            <motion.div
+              className="bg-white border-l-8 border-green-500 shadow-xl rounded-2xl p-8 hover:shadow-green-100 transition-shadow"
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+              viewport={{ once: true }}
+            >
+              <div className="flex items-center gap-4 mb-4">
+                <FaBullseye className="text-green-500 text-3xl" />
+                <h3 className="text-2xl font-semibold text-green-700">Our Mission</h3>
+              </div>
+              <p className="text-gray-600 mb-4">
+                Our mission is to provide accessible, zero-cost career and academic guidance tailored to each learner’s unique aspirations and abilities. Through expert mentoring, partnerships, and cutting-edge tools, we aim to bridge the gap between education and opportunity, enabling students to thrive in India and across the globe.
+              </p>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+      <CourseExplorer />
       <CareerSupportSection />
-      <section className="py-4 pb-8 bg-gray-50">
+      <section className="py-4 pb-8 bg-gray-100">
         <h2 className="text-4xl font-bold text-center mb-4 mt-7">
           Meet Our Mentor & Visionary Leader
         </h2>

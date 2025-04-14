@@ -29,7 +29,7 @@ const Navbar = () => {
         <header className="fixed top-0 w-full bg-white shadow z-50 py-2">
             <div className="max-w-7xl mx-auto px-4 flex items-center justify-between h-16">
                 <Link to="/" className="text-2xl font-bold text-blue-600">
-                    RRCareer
+                    RRC-Academic-Mentor
                 </Link>
 
                 {/* Desktop Nav */}
