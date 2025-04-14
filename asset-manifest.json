@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/career-guide-rrc/static/css/main.baaab80d.css",
-    "main.js": "/career-guide-rrc/static/js/main.dc12b4b6.js",
+    "main.css": "/career-guide-rrc/static/css/main.fadc0b43.css",
+    "main.js": "/career-guide-rrc/static/js/main.8299c29d.js",
     "static/js/453.9b5cffce.chunk.js": "/career-guide-rrc/static/js/453.9b5cffce.chunk.js",
     "static/media/inc.jpg": "/career-guide-rrc/static/media/inc.e3225e4cd0de8df2fccc.jpg",
     "static/media/ic.jpg": "/career-guide-rrc/static/media/ic.705170dd45dd883a4317.jpg",
@@ -17,12 +17,12 @@
     "static/media/slick.ttf": "/career-guide-rrc/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/career-guide-rrc/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/career-guide-rrc/index.html",
-    "main.baaab80d.css.map": "/career-guide-rrc/static/css/main.baaab80d.css.map",
-    "main.dc12b4b6.js.map": "/career-guide-rrc/static/js/main.dc12b4b6.js.map",
+    "main.fadc0b43.css.map": "/career-guide-rrc/static/css/main.fadc0b43.css.map",
+    "main.8299c29d.js.map": "/career-guide-rrc/static/js/main.8299c29d.js.map",
     "453.9b5cffce.chunk.js.map": "/career-guide-rrc/static/js/453.9b5cffce.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.baaab80d.css",
-    "static/js/main.dc12b4b6.js"
+    "static/css/main.fadc0b43.css",
+    "static/js/main.8299c29d.js"
   ]
 }
