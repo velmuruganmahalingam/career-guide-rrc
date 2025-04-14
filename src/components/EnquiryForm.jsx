@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 
 const EnquiryForm = () => {
     const [formData, setFormData] = useState({
@@ -6,24 +6,76 @@ const EnquiryForm = () => {
         email: "",
         phone: "",
         source: "",
-        comment: "",
+        otherSource: "", // ✅ New field
+        studyInterest: "", // ✅ Changed from comment
     });
+    const [sourceOptions, setSourceOption] = useState([]);
+    const hasFetchedRef = useRef(false);
+
+    useEffect(() => {
+        if (hasFetchedRef.current) return;
+        const fetchSource = async () => {
+            try {
+                const response = await fetch('https://career-guide-be-production.up.railway.app/api/enquiry/source', {
+                    method: 'GET',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                })
+                const data = await response.json()
+                console.log(data.Source)
+                setSourceOption(data.Source)
+
+            } catch (err) {
+                console.error(err)
+            }
+        };
+        fetchSource();
+        hasFetchedRef.current = true;
+    }, [])
 
     const handleChange = (e) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        console.log("Submitted Data:", formData);
-        alert("Thank you for your enquiry!");
-        setFormData({
-            name: "",
-            email: "",
-            phone: "",
-            source: "",
-            comment: "",
-        });
+
+        // Combine 'otherSource' with 'source' if selected
+        const finalData = {
+            ...formData,
+            phone: Number(formData.phone),
+            source: formData.source === "Other" ? formData.otherSource : formData.source,
+        };
+        try {
+            const res = await fetch("https://career-guide-be-production.up.railway.app/api/enquiry", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(finalData),
+            });
+
+            const result = await res.json();
+
+            if (res.ok) {
+                alert("Thank you for your enquiry!");
+                console.log("Success", result)
+                setFormData({
+                    name: formData.name = "",
+                    email: formData.email = "",
+                    phone: formData.phone = "",
+                    source: formData.source = "",
+                    otherSource: formData.otherSource = "",
+                    studyInterest: formData.studyInterest = "",
+                })
+            } else {
+                alert("Failed to send enquiry");
+                console.log("Error", result)
+            }
+        } catch (err) {
+            console.error(err);
+        }
     };
 
     return (
@@ -74,18 +126,36 @@ const EnquiryForm = () => {
                         className="p-3 border rounded-lg w-full text-gray-700"
                     >
                         <option value="">How did you hear about us?</option>
-                        <option value="Google">Google</option>
-                        <option value="Instagram">Instagram</option>
-                        <option value="Facebook">Facebook</option>
-                        <option value="Referral">Refferal</option>
-                        <option value="Other">Other</option>
+                        {sourceOptions.map((item, index) => (
+                            <option key={index} value={item}>{item}</option>
+                        ))}
+                    </select>
+
+                    {formData.source === "Other" && (
+                        <input
+                            type="text"
+                            name="otherSource"
+                            required
+                            value={formData.otherSource}
+                            onChange={handleChange}
+                            placeholder="Please specify how you heard about us"
+                            className="p-3 border rounded-lg w-full"
+                        />
+                    )}
+
+                    <select
+                        name="studyInterest"
+                        required
+                        value={formData.studyInterest}
+                        onChange={handleChange}
+                        className="p-3 border rounded-lg w-full text-gray-700">
+                        <option value="Domestic">Domestic Study</option>
+                        <option value="International">International Study</option>
                     </select>
 
                     <textarea
-                        name="comment"
-                        value={formData.comment}
-                        onChange={handleChange}
-                        placeholder="Your Comment"
+                        name="comments"
+                        placeholder="Tell us about you"
                         rows={4}
                         className="p-3 border rounded-lg w-full resize-none"
                     ></textarea>

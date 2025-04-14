@@ -9,9 +9,6 @@ import EnquiryForm from './components/EnquiryForm';
 import img1 from "./assets/1.jpeg";
 import img2 from "./assets/2.jpeg";
 import img3 from "./assets/3.jpeg";
-import img4 from "./assets/pr.jpg";
-import img5 from "./assets/oce1.png";
-import img6 from "./assets/jj.jpg";
 import md from "./assets/md.jpeg";
 function App() {
   const slides = [
@@ -41,51 +38,44 @@ function App() {
     },
   ];
 
-  const colleges = [
-    {
-      name: "Ponnaiya Ramajayam institure of Arts and Science",
-      location: 'Thanjavur',
-      logo: { main: img4 },
-      description: "Top-notch tech training partner.",
-      courses: ["AI Bootcamp", "React Dev", "Cloud Basics"],
-    },
-    {
-      name: "Oxford college of Engineering",
-      location: 'Trichy',
-      logo: { main: img5 },
-      description: "Top-notch tech training partner.",
-      courses: ["AI Bootcamp", "React Dev", "Cloud Basics"],
-    },
-    {
-      name: "J.J Engineering College",
-      location: 'Trichy',
-      logo: { main: img6 },
-      description: "Top-notch tech training partner.",
-      courses: ["AI Bootcamp", "React Dev", "Cloud Basics"],
-    },
-    {
-      name: "Ponnaiya Ramajayam institure of Arts and Science",
-      location: 'Thanjavur',
-      logo: { main: img4 },
-      description: "Top-notch tech training partner.",
-      courses: ["AI Bootcamp", "React Dev", "Cloud Basics"],
-    },
-    {
-      name: "Oxford college of Engineering",
-      location: 'Trichy',
-      logo: { main: img5 },
-      description: "Top-notch tech training partner.",
-      courses: ["AI Bootcamp", "React Dev", "Cloud Basics"],
-    },
-    {
-      name: "J.J Engineering College",
-      location: 'Trichy',
-      logo: { main: img6 },
-      description: "Top-notch tech training partner.",
-      courses: ["AI Bootcamp", "React Dev", "Cloud Basics"],
-    },
-    // More colleges...
-  ];
+  // const colleges = [
+  //   {
+  //     name: "Ponnaiya Ramajayam Institute of Arts and Science",
+  //     location: "Thanjavur",
+  //     logo: { main: img4 },
+  //     description: "A well-established college offering various undergraduate and postgraduate courses.",
+  //     courses: [
+  //       { name: "BSc Computer Science", category: "Arts & Science" },
+  //       { name: "BCA", category: "Arts & Science" },
+  //       { name: "BA English", category: "Arts & Science" },
+  //       { name: "MSc Physics", category: "Arts & Science" },
+  //       { name: "MCom", category: "Commerce" }
+  //     ]
+  //   },
+  //   {
+  //     name: "Oxford College of Engineering",
+  //     location: "Trichy",
+  //     logo: { main: img5 },
+  //     description: "Engineering excellence with a focus on innovation and technology.",
+  //     courses: [
+  //       { name: "BE Computer Science", category: "Engineering" },
+  //       { name: "BE Electronics and Communication", category: "Engineering" },
+  //       { name: "ME Structural Engineering", category: "Engineering" }
+  //     ]
+  //   },
+  //   {
+  //     name: "J.J Engineering College",
+  //     location: "Trichy",
+  //     logo: { main: img6 },
+  //     description: "Dedicated to nurturing future engineers and technologists.",
+  //     courses: [
+  //       { name: "BE Mechanical Engineering", category: "Engineering" },
+  //       { name: "BE Civil Engineering", category: "Engineering" },
+  //       { name: "MBA", category: "Management" }
+  //     ]
+  //   }
+  // ];
+
   console.log("Received slides:", slides);
 
   return (
@@ -101,8 +91,8 @@ function App() {
         /> */}
       <HeroSlider slides={slides} />
       <CareerSupportSection />
-      <section className="py-2 bg-gray-50">
-        <h2 className="text-4xl font-bold text-center mb-4">
+      <section className="py-4 pb-8 bg-gray-50">
+        <h2 className="text-4xl font-bold text-center mb-4 mt-7">
           Meet Our Mentor & Visionary Leader
         </h2>
         <div className="max-w-7xl mx-auto px-2">
@@ -135,7 +125,7 @@ function App() {
       </section>
 
 
-      <LogoSliderWithPopup items={colleges} title="Built with Campus Collaboration" />
+      <LogoSliderWithPopup title="Built with Campus Collaboration" />
 
 
       <TeamSection />
