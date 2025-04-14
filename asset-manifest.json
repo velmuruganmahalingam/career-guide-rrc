@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/career-guide-rrc/static/css/main.cf990419.css",
-    "main.js": "/career-guide-rrc/static/js/main.32d105b1.js",
+    "main.css": "/career-guide-rrc/static/css/main.ba7b51bc.css",
+    "main.js": "/career-guide-rrc/static/js/main.22164e38.js",
     "static/js/453.9b5cffce.chunk.js": "/career-guide-rrc/static/js/453.9b5cffce.chunk.js",
     "static/media/inc.jpg": "/career-guide-rrc/static/media/inc.e3225e4cd0de8df2fccc.jpg",
     "static/media/ic.jpg": "/career-guide-rrc/static/media/ic.705170dd45dd883a4317.jpg",
@@ -11,19 +11,18 @@
     "static/media/joseph.jpeg": "/career-guide-rrc/static/media/joseph.e167c3a702aae8a8f0ab.jpeg",
     "static/media/jeeva.jpeg": "/career-guide-rrc/static/media/jeeva.89466c4000d83db5372b.jpeg",
     "static/media/cholan1.jpeg": "/career-guide-rrc/static/media/cholan1.5a97cef45227aa1e0618.jpeg",
-    "static/media/oce1.png": "/career-guide-rrc/static/media/oce1.28ff2439ec0ca044721a.png",
     "static/media/ramya.jpeg": "/career-guide-rrc/static/media/ramya.305fea73b211f763d654.jpeg",
     "static/media/slick.svg": "/career-guide-rrc/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/career-guide-rrc/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/career-guide-rrc/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/career-guide-rrc/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/career-guide-rrc/index.html",
-    "main.cf990419.css.map": "/career-guide-rrc/static/css/main.cf990419.css.map",
-    "main.32d105b1.js.map": "/career-guide-rrc/static/js/main.32d105b1.js.map",
+    "main.ba7b51bc.css.map": "/career-guide-rrc/static/css/main.ba7b51bc.css.map",
+    "main.22164e38.js.map": "/career-guide-rrc/static/js/main.22164e38.js.map",
     "453.9b5cffce.chunk.js.map": "/career-guide-rrc/static/js/453.9b5cffce.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cf990419.css",
-    "static/js/main.32d105b1.js"
+    "static/css/main.ba7b51bc.css",
+    "static/js/main.22164e38.js"
   ]
 }
