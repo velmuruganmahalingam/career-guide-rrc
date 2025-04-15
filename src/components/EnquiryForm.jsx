@@ -6,8 +6,8 @@ const EnquiryForm = () => {
         email: "",
         phone: "",
         source: "",
-        otherSource: "", // ✅ New field
-        studyInterest: "", // ✅ Changed from comment
+        otherSource: "",
+        studyInterest: "",
     });
     const [sourceOptions, setSourceOption] = useState([]);
     const hasFetchedRef = useRef(false);
@@ -41,7 +41,7 @@ const EnquiryForm = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        // Combine 'otherSource' with 'source' if selected
+
         const finalData = {
             ...formData,
             phone: Number(formData.phone),

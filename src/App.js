@@ -42,44 +42,6 @@ function App() {
     },
   ];
 
-  // const colleges = [
-  //   {
-  //     name: "Ponnaiya Ramajayam Institute of Arts and Science",
-  //     location: "Thanjavur",
-  //     logo: { main: img4 },
-  //     description: "A well-established college offering various undergraduate and postgraduate courses.",
-  //     courses: [
-  //       { name: "BSc Computer Science", category: "Arts & Science" },
-  //       { name: "BCA", category: "Arts & Science" },
-  //       { name: "BA English", category: "Arts & Science" },
-  //       { name: "MSc Physics", category: "Arts & Science" },
-  //       { name: "MCom", category: "Commerce" }
-  //     ]
-  //   },
-  //   {
-  //     name: "Oxford College of Engineering",
-  //     location: "Trichy",
-  //     logo: { main: img5 },
-  //     description: "Engineering excellence with a focus on innovation and technology.",
-  //     courses: [
-  //       { name: "BE Computer Science", category: "Engineering" },
-  //       { name: "BE Electronics and Communication", category: "Engineering" },
-  //       { name: "ME Structural Engineering", category: "Engineering" }
-  //     ]
-  //   },
-  //   {
-  //     name: "J.J Engineering College",
-  //     location: "Trichy",
-  //     logo: { main: img6 },
-  //     description: "Dedicated to nurturing future engineers and technologists.",
-  //     courses: [
-  //       { name: "BE Mechanical Engineering", category: "Engineering" },
-  //       { name: "BE Civil Engineering", category: "Engineering" },
-  //       { name: "MBA", category: "Management" }
-  //     ]
-  //   }
-  // ];
-
   console.log("Received slides:", slides);
 
   return (

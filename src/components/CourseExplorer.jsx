@@ -4,11 +4,11 @@ import { FaArrowRight, FaTimes } from 'react-icons/fa';
 import { fetchCourseCategories } from '../api/courseExplorerApi';
 import { fetchCategories } from '../api/categoryExplorerApi';
 import { fetchEducationCategories } from '../api/educationExplorerApi';
-import subjectIcons from '../constants/courseIcons'; // Import the subject icons
+import subjectIcons from '../constants/courseIcons';
 
 const CourseExplorer = () => {
-    // Update the initial state
-    const [activeTab, setActiveTab] = useState('');  // Start with empty string instead of 'hsc'
+
+    const [activeTab, setActiveTab] = useState('');
     const [selectedCategory, setSelectedCategory] = useState(null);
     const [showPopup, setShowPopup] = useState(false);
     const [categories, setCategories] = useState([]);
@@ -16,17 +16,13 @@ const CourseExplorer = () => {
     const [isLoading, setIsLoading] = useState(true);
     const hasFetchedRef = useRef(false);
 
-    // At the top with other state declarations
     const [educationLevels, setEducationLevels] = useState([]);
 
-    // Remove the static educationLevels array
 
-    // Update the useEffect to include education levels fetch
     useEffect(() => {
         if (hasFetchedRef.current) return;
         const fetchData = async () => {
             try {
-                // Fetch education levels first
                 const levelsResponse = await fetchEducationCategories();
                 const levels = Array.isArray(levelsResponse?.data?.data)
                     ? levelsResponse.data.data
@@ -37,7 +33,6 @@ const CourseExplorer = () => {
                     setActiveTab(levels[0].id);
                 }
 
-                // Fetch course categories
                 const courseResponse = await fetchCourseCategories();
                 const courses = Array.isArray(courseResponse?.data?.data)
                     ? courseResponse.data.data
@@ -48,9 +43,8 @@ const CourseExplorer = () => {
                     ? categoryResponse.data.data
                     : [];
 
-                // Map courses to their categories and filter out invalid categories
                 const categoriesWithCourses = categories
-                    .filter(category => category && category.title) // Filter out undefined categories
+                    .filter(category => category && category.title)
                     .map(category => ({
                         ...category,
                         courses: courses.filter(course => course.category._id === category._id)
@@ -59,10 +53,9 @@ const CourseExplorer = () => {
 
                 setCategories(categoriesWithCourses);
 
-                // Fetch education categories and filter out invalid ones
                 const educationResponse = await fetchEducationCategories();
                 const eduCategories = Array.isArray(educationResponse?.data?.data)
-                    ? educationResponse.data.data.filter(category => category && category.title) // Filter out undefined
+                    ? educationResponse.data.data.filter(category => category && category.title)
                     : [];
                 setEducationCategories(eduCategories);
             } catch (err) {
@@ -105,7 +98,6 @@ const CourseExplorer = () => {
         return count;
     };
 
-    // Improved icon render helper with fallbacks
     const renderIcon = (IconComponent, iconColor = 'blue') => {
         return IconComponent ? (
             <IconComponent className={`text-3xl text-${iconColor}-500`} />
@@ -136,7 +128,6 @@ const CourseExplorer = () => {
                     <h2 className="text-4xl font-bold mb-4">Explore Our Courses</h2>
                 </motion.div>
 
-                {/* Tab Navigation */}
                 <div className="flex justify-center mb-12">
                     <div className="inline-flex rounded-full bg-white shadow-md p-1">
                         {console.log('1', educationLevels)}
@@ -155,7 +146,6 @@ const CourseExplorer = () => {
                     </div>
                 </div>
 
-                {/* Course Categories Grid */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                     {isLoading ? (
                         <div className="col-span-full text-center py-8 text-gray-500">Loading categories...</div>
@@ -195,7 +185,6 @@ const CourseExplorer = () => {
                     )}
                 </div>
 
-                {/* Education Categories Grid - KEEP ONLY THIS ONE */}
                 {educationCategories.length > 0 && (
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-8">
                         {isLoading ? (
@@ -236,7 +225,6 @@ const CourseExplorer = () => {
                 )}
             </div>
 
-            {/* Popup for Courses */}
             {showPopup && selectedCategory && (
                 <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
                     <motion.div

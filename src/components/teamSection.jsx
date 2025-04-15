@@ -15,28 +15,27 @@ const teamMembers = [
     {
         name: "Dr.M.Joseph",
         qualification: "BE, ME, PhD,",
-        designation: "Principal",
+        designation: "Mentor",
         photo: team1,
     },
     {
         name: "Rajendra Cholan.J",
         qualification: "M.A., M.Phil., M.Ed.,",
-        designation: "Principal",
+        designation: "Mentor",
         photo: team2,
     },
     {
         name: "Jeeva.S",
         qualification: "MBA",
-        designation: "Executive Manager",
+        designation: "Mentor",
         photo: team4,
     },
     {
         name: "Ramya.N",
         qualification: "M.Sc, B.Ed.",
-        designation: "Trainer",
+        designation: "Mentor",
         photo: team5,
     },
-    // Add more team members as needed
 ];
 
 const TeamSection = () => {

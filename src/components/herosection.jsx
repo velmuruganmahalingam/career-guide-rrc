@@ -9,7 +9,6 @@ const HeroSlider = ({ slides }) => {
     const sectionRef = useRef(null);
     const [navHeight, setNavHeight] = useState(0);
 
-    // Get nav height once on mount
     useEffect(() => {
         const header = document.querySelector("header");
         if (header) {
@@ -19,7 +18,7 @@ const HeroSlider = ({ slides }) => {
 
     const settings = {
         centerMode: true,
-        centerPadding: "15%", // Reduced to give center more space
+        centerPadding: "15%",
         slidesToShow: 1,
         autoplay: true,
         autoplaySpeed: 4000,

@@ -5,7 +5,6 @@ const Footer = () => {
     return (
         <footer className="bg-gray-100 border-t">
             <div className="max-w-7xl mx-auto px-4 py-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
-                {/* Brand */}
                 <div>
                     <h2 className="text-xl font-bold text-gray-800 mb-4">RRCareer</h2>
                     <p className="text-gray-600 text-sm">
@@ -13,7 +12,6 @@ const Footer = () => {
                     </p>
                 </div>
 
-                {/* Quick Links */}
                 <div>
                     <h3 className="text-lg font-semibold text-gray-700 mb-3">Quick Links</h3>
                     <ul className="space-y-2 text-sm">
@@ -24,7 +22,6 @@ const Footer = () => {
                     </ul>
                 </div>
 
-                {/* Resources */}
                 <div>
                     <h3 className="text-lg font-semibold text-gray-700 mb-3">Resources</h3>
                     <ul className="space-y-2 text-sm">
@@ -35,7 +32,6 @@ const Footer = () => {
                     </ul>
                 </div>
 
-                {/* Subscribe */}
                 <div>
                     <h3 className="text-lg font-semibold text-gray-700 mb-3">Stay Updated</h3>
                     <form className="flex flex-col space-y-2">

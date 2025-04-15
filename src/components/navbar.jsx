@@ -32,7 +32,6 @@ const Navbar = () => {
                     RRC-Academic-Mentor
                 </Link>
 
-                {/* Desktop Nav */}
                 <div className="hidden lg:flex items-center space-x-7">
                     {navItems.map((item) => (
                         <Link
@@ -54,7 +53,6 @@ const Navbar = () => {
                     </Link>
                 </div>
 
-                {/* Mobile Toggle */}
                 <button
                     className="lg:hidden text-gray-700"
                     onClick={() => setMobileMenuOpen(!isMobileMenuOpen)}
@@ -65,7 +63,6 @@ const Navbar = () => {
                 </button>
             </div>
 
-            {/* Mobile Menu */}
             <div
                 ref={mobileMenuRef}
                 style={{

@@ -4,7 +4,6 @@ import * as GiIcons from 'react-icons/gi';
 
 
 const subjectIcons = {
-    // Your provided icons configuration
     'Engineering': { icon: FaIcons.FaCogs, color: 'blue' },
     'Arts and Science': { icon: FaIcons.FaFlask, color: 'purple' },
     'Computer Science': { icon: FaIcons.FaLaptopCode, color: 'indigo' },
@@ -14,7 +13,6 @@ const subjectIcons = {
     'Electronics': { icon: FaIcons.FaMicrochip, color: 'red' },
     'Information Technology': { icon: FaIcons.FaServer, color: 'blue' },
 
-    // Arts and Science related
     'Arts and Science': { icon: FaIcons.FaFlask, color: 'purple' },
     'Physics': { icon: FaIcons.FaAtom, color: 'blue' },
     'Chemistry': { icon: GiIcons.GiMolecule, color: 'green' },
@@ -29,7 +27,6 @@ const subjectIcons = {
     'Sociology': { icon: FaIcons.FaUsers, color: 'blue' },
     'Languages': { icon: FaIcons.FaLanguage, color: 'green' },
 
-    // Management related
     'Management': { icon: FaIcons.FaBriefcase, color: 'blue' },
     'Business Administration': { icon: FaIcons.FaChartBar, color: 'blue' },
     'Finance': { icon: FaIcons.FaMoneyBillWave, color: 'green' },
@@ -38,19 +35,16 @@ const subjectIcons = {
     'Operations': { icon: FaIcons.FaCogs, color: 'gray' },
     'Accounting': { icon: FaIcons.FaCalculator, color: 'green' },
 
-    // Healthcare related
     'Medical': { icon: FaIcons.FaMedkit, color: 'red' },
     'Nursing': { icon: FaIcons.FaUserNurse, color: 'red' },
     'Pharmacy': { icon: FaIcons.FaPrescriptionBottleAlt, color: 'green' },
     'Dentistry': { icon: FaIcons.FaTeeth, color: 'blue' },
 
-    // Arts related
     'Fine Arts': { icon: FaIcons.FaPaintBrush, color: 'purple' },
     'Music': { icon: FaIcons.FaMusic, color: 'indigo' },
-    'Dance': { icon: FaIcons.FaUserFriends, color: 'pink' }, // Changed from GiDancing to FaUserFriends
+    'Dance': { icon: FaIcons.FaUserFriends, color: 'pink' },
     'Theatre': { icon: FaIcons.FaTheaterMasks, color: 'yellow' },
 
-    // Technology related
     'Computer Applications': { icon: FaIcons.FaDesktop, color: 'blue' },
     'Data Science': { icon: FaIcons.FaDatabase, color: 'blue' },
     'Artificial Intelligence': { icon: RiIcons.RiRobot2Fill, color: 'indigo' },
@@ -59,14 +53,11 @@ const subjectIcons = {
     'Mobile Development': { icon: FaIcons.FaMobileAlt, color: 'blue' },
     'Cybersecurity': { icon: FaIcons.FaShieldAlt, color: 'red' },
 
-    // Law related
     'Law': { icon: FaIcons.FaGavel, color: 'yellow' },
 
-    // Education related
     'Education': { icon: FaIcons.FaGraduationCap, color: 'blue' },
     'Physical Education': { icon: FaIcons.FaRunning, color: 'green' },
 
-    // Default fallback
     'default': { icon: FaIcons.FaBook, color: 'blue' }
 };
 

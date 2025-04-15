@@ -1,16 +1,7 @@
 import ServiceBlock from "./ServiceBlock";
 import img1 from "../assets/ic.jpg";
 import img2 from "../assets/inc.jpg";
-import {
-    FaMapSigns,
-    FaBrain,
-    FaUserCheck,
-    FaChartLine,
-    FaTools,
-    FaLightbulb,
-    FaPlaneDeparture,
-    FaCompass,
-} from "react-icons/fa";
+import { FaMapSigns, FaBrain, FaUserCheck, FaChartLine, FaTools, FaLightbulb, FaPlaneDeparture, FaCompass } from "react-icons/fa";
 
 const CareerSupportSection = () => {
     return (
