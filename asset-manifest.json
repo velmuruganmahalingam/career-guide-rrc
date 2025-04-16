@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/career-guide-rrc/static/css/main.40b2511f.css",
-    "main.js": "/career-guide-rrc/static/js/main.a79b7faa.js",
+    "main.js": "/career-guide-rrc/static/js/main.a689e79d.js",
     "static/js/453.9b5cffce.chunk.js": "/career-guide-rrc/static/js/453.9b5cffce.chunk.js",
     "static/media/story1.jpg": "/career-guide-rrc/static/media/story1.dfab52eba6bb4b07acda.jpg",
     "static/media/story3.jpg": "/career-guide-rrc/static/media/story3.361bd1735589160edb3e.jpg",
@@ -23,11 +23,11 @@
     "static/media/slick.woff": "/career-guide-rrc/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/career-guide-rrc/index.html",
     "main.40b2511f.css.map": "/career-guide-rrc/static/css/main.40b2511f.css.map",
-    "main.a79b7faa.js.map": "/career-guide-rrc/static/js/main.a79b7faa.js.map",
+    "main.a689e79d.js.map": "/career-guide-rrc/static/js/main.a689e79d.js.map",
     "453.9b5cffce.chunk.js.map": "/career-guide-rrc/static/js/453.9b5cffce.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.40b2511f.css",
-    "static/js/main.a79b7faa.js"
+    "static/js/main.a689e79d.js"
   ]
 }
