@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../styles/HeroSlider.css";
 
-const HeroSlider = ({ slides }) => {
+const HeroSlider = ({ slides, variant }) => {
     const sectionRef = useRef(null);
     const [navHeight, setNavHeight] = useState(0);
 
@@ -83,6 +83,12 @@ const HeroSlider = ({ slides }) => {
                                         >
                                             {slide.ctaText}
                                         </Link>
+                                    )}
+                                    {/* 🟡 Variant-based extra content */}
+                                    {variant === "about" && (
+                                        <div className="mt-4 text-center text-sm text-blue-600">
+                                            {/* Extra info or style only shown on About page */}
+                                        </div>
                                     )}
                                 </div>
                             </div>
