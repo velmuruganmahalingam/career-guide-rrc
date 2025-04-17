@@ -1,20 +1,25 @@
 {
   "files": {
-    "main.css": "/career-guide-rrc/static/css/main.40b2511f.css",
-    "main.js": "/career-guide-rrc/static/js/main.a689e79d.js",
-    "static/js/453.9b5cffce.chunk.js": "/career-guide-rrc/static/js/453.9b5cffce.chunk.js",
+    "main.css": "/career-guide-rrc/static/css/main.d0393158.css",
+    "main.js": "/career-guide-rrc/static/js/main.e7550a39.js",
+    "static/js/453.9e91d7f5.chunk.js": "/career-guide-rrc/static/js/453.9e91d7f5.chunk.js",
     "static/media/story1.jpg": "/career-guide-rrc/static/media/story1.dfab52eba6bb4b07acda.jpg",
     "static/media/story3.jpg": "/career-guide-rrc/static/media/story3.361bd1735589160edb3e.jpg",
     "static/media/inc.jpg": "/career-guide-rrc/static/media/inc.e3225e4cd0de8df2fccc.jpg",
+    "static/media/e1.jpg": "/career-guide-rrc/static/media/e1.c5b2ac89f4248729ee52.jpg",
     "static/media/story2.jpg": "/career-guide-rrc/static/media/story2.9d1507273cae54008cad.jpg",
     "static/media/ic.jpg": "/career-guide-rrc/static/media/ic.705170dd45dd883a4317.jpg",
     "static/media/1.jpeg": "/career-guide-rrc/static/media/1.5da93f3e8bbcbcd4b4eb.jpeg",
     "static/media/2.jpeg": "/career-guide-rrc/static/media/2.9f7a87ffd6785174ced9.jpeg",
     "static/media/3.jpeg": "/career-guide-rrc/static/media/3.aea33962550c3fe977ae.jpeg",
+    "static/media/ev5.jpeg": "/career-guide-rrc/static/media/ev5.08d084d2779c0dbd010f.jpeg",
     "static/media/joseph.jpeg": "/career-guide-rrc/static/media/joseph.e167c3a702aae8a8f0ab.jpeg",
     "static/media/jeeva.jpeg": "/career-guide-rrc/static/media/jeeva.89466c4000d83db5372b.jpeg",
     "static/media/cholan1.jpeg": "/career-guide-rrc/static/media/cholan1.5a97cef45227aa1e0618.jpeg",
+    "static/media/e2.jpeg": "/career-guide-rrc/static/media/e2.be43a54a10e71f92bbed.jpeg",
     "static/media/im.png": "/career-guide-rrc/static/media/im.be453196c088525c254b.png",
+    "static/media/ev4.jpeg": "/career-guide-rrc/static/media/ev4.526c588338a2efbcabd1.jpeg",
+    "static/media/ev3.jpeg": "/career-guide-rrc/static/media/ev3.b6afe24e9ea408d734fd.jpeg",
     "static/media/ftr-logo.png": "/career-guide-rrc/static/media/ftr-logo.f252df0189dcaa24b1f8.png",
     "static/media/ramya.jpeg": "/career-guide-rrc/static/media/ramya.305fea73b211f763d654.jpeg",
     "static/media/slick.svg": "/career-guide-rrc/static/media/slick.2630a3e3eab21c607e21.svg",
@@ -22,12 +27,12 @@
     "static/media/slick.ttf": "/career-guide-rrc/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/career-guide-rrc/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/career-guide-rrc/index.html",
-    "main.40b2511f.css.map": "/career-guide-rrc/static/css/main.40b2511f.css.map",
-    "main.a689e79d.js.map": "/career-guide-rrc/static/js/main.a689e79d.js.map",
-    "453.9b5cffce.chunk.js.map": "/career-guide-rrc/static/js/453.9b5cffce.chunk.js.map"
+    "main.d0393158.css.map": "/career-guide-rrc/static/css/main.d0393158.css.map",
+    "main.e7550a39.js.map": "/career-guide-rrc/static/js/main.e7550a39.js.map",
+    "453.9e91d7f5.chunk.js.map": "/career-guide-rrc/static/js/453.9e91d7f5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.40b2511f.css",
-    "static/js/main.a689e79d.js"
+    "static/css/main.d0393158.css",
+    "static/js/main.e7550a39.js"
   ]
 }
