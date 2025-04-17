@@ -1,8 +1,9 @@
 import './App.css';
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
-import AboutUs from "./pages/AboutUs"; // (Create this file later)
-
+import AboutUs from "./pages/AboutUs";
+import Events from "./pages/events";
+import Blog from "./pages/blogs";
 function App() {
   return (
     // <div className="relative">
@@ -117,6 +118,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<AboutUs />} />
+        <Route path="/events" element={<Events />} />
+        <Route path="/blog" element={<Blog />} />
       </Routes>
     </div>
   );
