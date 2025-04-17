@@ -14,7 +14,7 @@ const ServiceBlock = ({
                 <img src={image} alt={title} className="rounded-2xl shadow-xl w-full h-[407px] object-cover" />
             </div>
             <div className="w-full md:w-1/2">
-                <h4 className="text-2xl font-semibold mb-4">{title}</h4>
+                <h4 className="text-2xl text-gray-700 font-semibold mb-4">{title}</h4>
                 <p className="text-gray-600 mb-4">{description}</p>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm text-gray-700 my-10">
                     {quotes.map((quote, i) => (

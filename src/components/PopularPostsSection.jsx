@@ -54,7 +54,7 @@ export default function PopularPostsSection() {
         <section className="py-10 bg-gray-100">
             <div className="max-w-7xl mx-auto px-4 sm:px-6">
                 <div className="flex justify-between items-center mb-8">
-                    <h2 className="text-2xl font-bold text-gray-800 text-center">
+                    <h2 className="text-3xl font-bold text-gray-700 text-center">
                         Popular Posts
                     </h2>
                     <Link to="/all-posts" className="text-blue-600 hover:text-blue-700 font-medium">
@@ -82,7 +82,7 @@ export default function PopularPostsSection() {
                                         <FaEye className="mr-1" /> {featuredPost.views}
                                     </span>
                                 </div>
-                                <h3 className="text-xl font-bold text-gray-900 mb-2">
+                                <h3 className="text-xl font-bold text-gray-700 mb-2">
                                     <Link to={featuredPost.link} className="hover:text-blue-600">
                                         {featuredPost.title}
                                     </Link>
@@ -101,7 +101,7 @@ export default function PopularPostsSection() {
                     {/* Trending Posts List */}
                     <div className="lg:col-span-6">
                         <div className="bg-white rounded-xl shadow-md p-6">
-                            <h3 className="text-lg font-bold text-gray-800 mb-4 flex items-center">
+                            <h3 className="text-lg font-bold text-gray-700 mb-4 flex items-center">
                                 <span className="w-2 h-6 bg-blue-600 rounded-full mr-2"></span>
                                 Trending Now
                             </h3>
@@ -123,7 +123,7 @@ export default function PopularPostsSection() {
                                                     <span className="mx-2">•</span>
                                                     <span>{post.readTime}</span>
                                                 </div>
-                                                <h4 className="text-base font-medium text-gray-900 hover:text-blue-600">
+                                                <h4 className="text-base font-medium text-gray-700 hover:text-blue-600">
                                                     <Link to={post.link}>{post.title}</Link>
                                                 </h4>
                                             </div>

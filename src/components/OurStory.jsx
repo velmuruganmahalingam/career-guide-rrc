@@ -22,7 +22,7 @@ const OurStorySection = () => {
     };
 
     return (
-        <section className="relative pt-10 pb-1 overflow-hidden bg-white-50">
+        <section className="relative pt-5 pb-1 overflow-hidden bg-white-50">
             {/* Background images */}
             <div className="absolute inset-0 z-0">
                 <div className="absolute inset-0"></div>
@@ -52,10 +52,10 @@ const OurStorySection = () => {
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 <div className="text-center mb-16">
-                    <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+                    <h2 className="text-3xl text-gray-700 font-bold mb-4">
                         Our Story & Evolution
                     </h2>
-                    <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                    <p className="text-sm text-gray-600">
                         From humble beginnings to becoming a leader in career guidance, here's how we've evolved and made an impact.
                     </p>
                 </div>
@@ -105,7 +105,7 @@ const OurStorySection = () => {
 
                                 {/* Content Section */}
                                 <div className={`w-full md:w-1/2 p-8 ${index % 2 === 0 ? "md:order-2" : "md:order-1"}`}>
-                                    <h3 className="text-2xl font-bold text-gray-800 mb-4">{item.title}</h3>
+                                    <h3 className="text-2xl font-bold text-gray-700 mb-4">{item.title}</h3>
                                     <p className="text-gray-600 mb-6 leading-relaxed">{item.description}</p>
 
                                     {/* Key achievements */}

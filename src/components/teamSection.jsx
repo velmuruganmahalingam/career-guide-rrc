@@ -42,7 +42,7 @@ const TeamSection = () => {
     return (
         <section className="bg-gray-50 py-10">
             <div className="bg-gray-50 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 overflow-hidden">
-                <h2 className="text-4xl font-bold mb-4 text-center">Meet the People Behind RRC</h2>
+                <h2 className="text-3xl text-gray-700 font-bold mb-4 text-center">Meet the Mentors Behind RRC</h2>
                 <p className="text-gray-600 text-center max-w-2xl mx-auto mb-10">
                     Experts. Mentors. Innovators.
                     <br />
@@ -65,7 +65,7 @@ const TeamSection = () => {
                                     alt={member.name}
                                     className="w-24 h-24 mx-auto rounded-full object-cover mb-3"
                                 />
-                                <h3 className="text-base font-semibold">{member.name}</h3>
+                                <h3 className="text-base text-gray-700 font-semibold">{member.name}</h3>
                                 <p className="text-sm text-gray-600">{member.qualification}</p>
                                 <p className="text-sm text-gray-500 mt-1">{member.designation}</p>
                             </div>

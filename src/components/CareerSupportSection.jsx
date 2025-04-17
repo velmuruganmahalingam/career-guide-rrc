@@ -8,7 +8,7 @@ const CareerSupportSection = () => {
         <section className="py-5 bg-white-50">
             <div className="max-w-7xl mx-auto px-4">
                 <div className="text-center mb-12">
-                    <h2 className="text-4xl font-bold mb-4">Our Services & Career Support Pathway</h2>
+                    <h2 className="text-3xl text-gray-700 font-bold mb-4">Our Services & Career Support Pathway</h2>
                     <p className="text-gray-600 max-w-2xl mx-auto">
                         Our Career guidance helps individuals make informed choices about their education and career path — tailored to your strengths and aspirations.
                     </p>

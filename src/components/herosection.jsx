@@ -74,7 +74,7 @@ const HeroSlider = ({ slides, variant }) => {
                                     />
                                 </div>
                                 <div className="content-container text-center">
-                                    <h2 className="text-xl font-bold">{slide.title}</h2>
+                                    <h2 className="text-xl text-gray-700 font-bold">{slide.title}</h2>
                                     <p className="text-sm text-gray-600 mt-2">{slide.subtitle}</p>
                                     {slide.ctaText && (
                                         <Link

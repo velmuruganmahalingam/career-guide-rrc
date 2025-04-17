@@ -116,7 +116,7 @@ const CourseExplorer = () => {
     };
 
     return (
-        <section className="py-11 bg-gray-100">
+        <section className="py-10 bg-gray-100">
             <div className="max-w-7xl mx-auto px-4">
                 <motion.div
                     className="text-center mb-8"
@@ -125,7 +125,7 @@ const CourseExplorer = () => {
                     transition={{ duration: 0.5 }}
                     viewport={{ once: true }}
                 >
-                    <h2 className="text-4xl font-bold mb-4">Explore Our Courses</h2>
+                    <h2 className="text-3xl text-gray-700 font-bold mb-4">Explore Our Courses</h2>
                 </motion.div>
 
                 <div className="flex justify-center mb-12">
@@ -164,10 +164,10 @@ const CourseExplorer = () => {
                                     <div className="text-gray-800">
                                         {getCategoryIcon(category)}
                                     </div>
-                                    <h3 className="text-xl font-bold mt-3 mb-1">{category.title}</h3>
-                                    <p className="text-gray-600 text-sm mb-3 flex-grow">{category.description}</p>
+                                    <h3 className="text-xl text-gray-700 font-bold mt-3 mb-1">{category.title}</h3>
+                                    <p className="text-gray-700 text-sm mb-3 flex-grow">{category.description}</p>
                                     <div className="flex justify-between items-center mt-auto">
-                                        <span className="text-sm font-medium">
+                                        <span className="text-sm text-gray-800 font-medium">
                                             {getCourseCount(category)} courses
                                         </span>
                                         <button
@@ -204,10 +204,10 @@ const CourseExplorer = () => {
                                         <div className="text-gray-800">
                                             {getCategoryIcon(category)}
                                         </div>
-                                        <h3 className="text-xl font-bold mt-3 mb-1">{category.title}</h3>
-                                        <p className="text-gray-600 text-sm mb-3 flex-grow">{category.description}</p>
+                                        <h3 className="text-xl text-gray-700 font-bold mt-3 mb-1">{category.title}</h3>
+                                        <p className="text-gray-700 text-sm mb-3 flex-grow">{category.description}</p>
                                         <div className="flex justify-between items-center mt-auto">
-                                            <span className="text-sm font-medium">
+                                            <span className="text-sm text-gray-700 font-medium">
                                                 {getCourseCount(category)} courses
                                             </span>
                                             <button
@@ -234,7 +234,7 @@ const CourseExplorer = () => {
                         exit={{ scale: 0.9, opacity: 0 }}
                     >
                         <div className="flex justify-between items-center border-b p-5">
-                            <h3 className="text-2xl font-bold text-gray-800">
+                            <h3 className="text-2xl font-bold text-gray-700">
                                 {selectedCategory.title} Courses - {activeTab.toUpperCase()}
                             </h3>
                             <button
@@ -250,7 +250,7 @@ const CourseExplorer = () => {
                                     {getFilteredCourses(selectedCategory).map((course, index) => (
                                         <li key={course._id || index} className="p-3 border border-gray-100 rounded-md hover:bg-blue-50 hover:border-blue-200 transition-colors">
                                             <div className="flex items-center justify-between">
-                                                <span className="font-medium">{course.name}</span>
+                                                <span className="font-medium text-gray-700">{course.name}</span>
                                                 <button className="text-blue-600 text-sm hover:underline">Details</button>
                                             </div>
                                         </li>

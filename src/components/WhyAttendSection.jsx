@@ -38,7 +38,7 @@ export default function WhyAttendSection() {
         <section className="bg-gray-100 py-10">
             <div className="max-w-7xl mx-auto px-4">
                 <div className="text-center mb-12">
-                    <h2 className="text-4xl font-bold mb-4 text-center">Why Attend?</h2>
+                    <h2 className="text-3xl text-gray-700 font-bold mb-4 text-center">Why Attend?</h2>
                     <p className="text-gray-600  mt-2">
                         Not just another session — it's your next big step!
                     </p>
@@ -53,7 +53,7 @@ export default function WhyAttendSection() {
                             <div className="bg-gradient-to-br from-blue-200 to-blue-400 text-blue-900 p-3 rounded-full">
                                 {item.icon}
                             </div>
-                            <h4 className="text-xl font-semibold text-gray-800">{item.title}</h4>
+                            <h4 className="text-xl font-semibold text-gray-700">{item.title}</h4>
                             <p className="text-gray-600 text-sm">{item.description}</p>
                         </div>
                     ))}

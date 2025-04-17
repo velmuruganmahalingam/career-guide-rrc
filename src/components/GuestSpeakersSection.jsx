@@ -38,7 +38,7 @@ export default function GuestSpeakersSection() {
     return (
         <section className="py-10 bg-white">
             <div className="max-w-7xl mx-auto px-4">
-                <h2 className="text-4xl font-bold mb-4 text-center">
+                <h2 className="text-3xl text-gray-700 font-bold mb-4 text-center">
                     Guest Speakers & Mentors
                 </h2>
                 <p className="text-center max-w-2xl mx-auto text-gray-600 mb-10">
@@ -55,7 +55,7 @@ export default function GuestSpeakersSection() {
                                 alt={speaker.name}
                                 className="w-24 h-24 rounded-full object-cover mx-auto border-4 border-white shadow-md"
                             />
-                            <h3 className="text-lg font-semibold text-center mt-4 text-gray-800">{speaker.name}</h3>
+                            <h3 className="text-lg font-semibold text-center mt-4 text-gray-700">{speaker.name}</h3>
                             <p className="text-center text-sm text-gray-600 font-medium">{speaker.role}</p>
                             <p className="text-center text-sm mt-1 text-gray-600 italic">"{speaker.topic}"</p>
 

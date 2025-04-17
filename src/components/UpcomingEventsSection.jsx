@@ -41,7 +41,7 @@ export default function UpcomingEventsSection() {
     return (
         <section className="py-7 bg-white-50">
             <div className="max-w-7xl mx-auto px-4">
-                <h2 className="text-4xl font-bold mb-7 text-center">
+                <h2 className="text-3xl text-gray-700 font-bold mb-7 text-center">
                     Upcoming Events
                 </h2>
                 <p className="text-center max-w-xl mx-auto text-gray-600 mb-10">
@@ -56,7 +56,7 @@ export default function UpcomingEventsSection() {
                                 <div className="text-sm text-gray-500">
                                     {event.date} · {event.time}
                                 </div>
-                                <h3 className="text-xl font-semibold text-gray-600 mt-1 group-hover:text-blue-600 transition">
+                                <h3 className="text-xl font-semibold text-gray-700 mt-1 group-hover:text-blue-600 transition">
                                     {event.title}
                                 </h3>
                                 <p className="text-gray-600 text-sm mt-1">{event.description}</p>
@@ -81,7 +81,7 @@ export default function UpcomingEventsSection() {
                                 <div className="text-sm text-gray-500">
                                     {event.date} · {event.time}
                                 </div>
-                                <h3 className="text-xl font-semibold text-gray-800 mt-1 group-hover:text-blue-600 transition">
+                                <h3 className="text-xl font-semibold text-gray-700 mt-1 group-hover:text-blue-600 transition">
                                     {event.title}
                                 </h3>
                                 <p className="text-gray-600 text-sm mt-1">{event.description}</p>

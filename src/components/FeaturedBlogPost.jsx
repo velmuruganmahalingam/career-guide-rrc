@@ -21,7 +21,7 @@ export default function FeaturedBlogPost() {
                     />
                 </div>
                 <div className="md:w-1/2">
-                    <h2 className="text-3xl font-bold text-gray-800 mb-4">
+                    <h2 className="text-3xl font-bold text-gray-700 mb-4">
                         {featuredPost.title}
                     </h2>
                     <p className="text-gray-600 text-lg mb-6">

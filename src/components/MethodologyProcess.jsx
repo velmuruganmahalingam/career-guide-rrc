@@ -40,10 +40,10 @@ const MethodologyTimeline = () => {
         <section className="bg-gray-100 py-10">
             <div className="max-w-7xl mx-auto px-4">
                 <div className="text-center mb-10">
-                    <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
+                    <h2 className="text-3xl text-gray-700 font-bold mb-4">
                         Our Approach to Career Guidance
                     </h2>
-                    <p className="text-gray-500 mt-3 max-w-2xl mx-auto text-sm">
+                    <p className="text-sm text-gray-600">
                         A step-by-step process designed for clarity and direction.
                     </p>
                 </div>
@@ -73,9 +73,9 @@ const MethodologyTimeline = () => {
                                             <div className="w-10 h-10 rounded-full bg-indigo-100 text-indigo-600 flex items-center justify-center text-lg mr-3">
                                                 {step.icon}
                                             </div>
-                                            <h3 className="text-md font-semibold text-gray-800">{step.title}</h3>
+                                            <h3 className="text-md font-semibold text-gray-700">{step.title}</h3>
                                         </div>
-                                        <p className="text-gray-600 text-xs leading-snug">{step.desc}</p>
+                                        <p className="text-sm text-gray-600">{step.desc}</p>
                                     </motion.div>
 
                                     {/* Dot on center line */}

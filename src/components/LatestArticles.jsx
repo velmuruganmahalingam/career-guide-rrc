@@ -32,7 +32,7 @@ export default function LatestArticles() {
     return (
         <section className="py-10 bg-gray-100">
             <div className="max-w-7xl mx-auto px-4">
-                <h2 className="text-3xl font-bold text-gray-800 text-center mb-4">
+                <h2 className="text-3xl font-bold text-gray-700 text-center mb-4">
                     Latest Articles
                 </h2>
                 <p className="text-center max-w-2xl mx-auto text-gray-600 mb-10">
@@ -52,7 +52,7 @@ export default function LatestArticles() {
                             />
                             <div className="p-5">
                                 <p className="text-sm text-gray-500">{article.date}</p>
-                                <h3 className="text-lg font-semibold text-gray-800 mt-1 mb-2">
+                                <h3 className="text-lg font-semibold text-gray-700 mt-1 mb-2">
                                     {article.title}
                                 </h3>
                                 <p className="text-gray-600 text-sm">{article.summary}</p>

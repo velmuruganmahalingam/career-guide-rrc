@@ -50,7 +50,7 @@ const Home = () => {
             <Navbar />
             <HeroSlider slides={slides} />
 
-            <section className="py-4 bg-white-50">
+            {/* <section className="py-4 bg-white-50">
                 <div className="max-w-7xl mx-auto px-4">
                     <motion.div
                         className="text-center mb-12"
@@ -99,12 +99,12 @@ const Home = () => {
                         </motion.div>
                     </div>
                 </div>
-            </section>
-
-            <CourseExplorer />
+            </section> */}
             <CareerSupportSection />
+            <CourseExplorer />
 
-            <section className="py-4 pb-8 bg-gray-100">
+
+            {/* <section className="py-4 pb-8 bg-gray-100">
                 <h2 className="text-4xl font-bold text-center mb-4 mt-7">
                     Meet Our Mentor & Visionary Leader
                 </h2>
@@ -134,7 +134,7 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
 
             <LogoSliderWithPopup title="Built with Campus Collaboration" />
             <TeamSection />

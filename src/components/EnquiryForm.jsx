@@ -5,9 +5,10 @@ const EnquiryForm = () => {
         name: "",
         email: "",
         phone: "",
+        stdQualification: "",
         source: "",
         otherSource: "",
-        studyInterest: "",
+        studyInterest: "Domestic",
     });
     const [sourceOptions, setSourceOption] = useState([]);
     const hasFetchedRef = useRef(false);
@@ -65,6 +66,7 @@ const EnquiryForm = () => {
                     name: formData.name = "",
                     email: formData.email = "",
                     phone: formData.phone = "",
+                    stdQualification: formData.stdQualification = "",
                     source: formData.source = "",
                     otherSource: formData.otherSource = "",
                     studyInterest: formData.studyInterest = "",
@@ -81,12 +83,11 @@ const EnquiryForm = () => {
     return (
         <section className="py-10  bg-white-50">
             <div className="px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-                <h2 className="text-4xl font-bold mb-4 text-center">Send Us Your Enquiry</h2>
+                <h2 className="text-3xl text-gray-700 font-bold mb-4 text-center">Let’s Guide Your Next Step</h2>
 
                 <form
                     onSubmit={handleSubmit}
-                    className="bg-gray-50 p-6 rounded-xl shadow space-y-4"
-                >
+                    className="bg-gray-100 p-6 rounded-xl shadow space-y-4">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <input
                             type="text"
@@ -95,8 +96,7 @@ const EnquiryForm = () => {
                             value={formData.name}
                             onChange={handleChange}
                             placeholder="Your Name"
-                            className="p-3 border rounded-lg w-full"
-                        />
+                            className="p-3 border rounded-lg w-full" />
                         <input
                             type="email"
                             name="email"
@@ -117,6 +117,27 @@ const EnquiryForm = () => {
                         placeholder="Phone Number"
                         className="p-3 border rounded-lg w-full"
                     />
+
+                    <input
+                        name="stdQualification"
+                        required
+                        placeholder="Your Education"
+                        value={formData.stdQualification}
+                        onChange={handleChange}
+                        rows={4}
+                        className="p-3 border rounded-lg w-full resize-none"
+                    />
+
+                    <select
+                        name="studyInterest"
+                        required
+                        value={formData.studyInterest}
+                        onChange={handleChange}
+                        className="p-3 border rounded-lg w-full text-gray-700">
+                        <option value="">Select Study Interest</option>
+                        <option value="Domestic">Domestic Study</option>
+                        <option value="International">International Study</option>
+                    </select>
 
                     <select
                         name="source"
@@ -142,23 +163,6 @@ const EnquiryForm = () => {
                             className="p-3 border rounded-lg w-full"
                         />
                     )}
-
-                    <select
-                        name="studyInterest"
-                        required
-                        value={formData.studyInterest}
-                        onChange={handleChange}
-                        className="p-3 border rounded-lg w-full text-gray-700">
-                        <option value="Domestic">Domestic Study</option>
-                        <option value="International">International Study</option>
-                    </select>
-
-                    <textarea
-                        name="comments"
-                        placeholder="Tell us about you"
-                        rows={4}
-                        className="p-3 border rounded-lg w-full resize-none"
-                    ></textarea>
 
                     <div className="text-center">
                         <button

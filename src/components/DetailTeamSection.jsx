@@ -123,8 +123,8 @@ const DetailedTeamSection = () => {
         <section className="py-10 bg-gray-100">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-16">
-                    <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Our Expert Team</h2>
-                    <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                    <h2 className="text-3xl text-gray-700 font-bold mb-4">Our Expert Team</h2>
+                    <p className="text-sm text-gray-600">
                         Meet the dedicated professionals who guide our students toward successful futures. Each brings specialized expertise and a passion for mentoring.
                     </p>
                 </div>
@@ -163,14 +163,14 @@ const DetailedTeamSection = () => {
                                     <div className="inline-flex items-center bg-blue-600 text-white px-3 py-1 text-sm rounded-full mb-2">
                                         {member.category}
                                     </div>
-                                    <h3 className="text-xl font-bold text-white">{member.name}</h3>
+                                    <h3 className="text-xl font-bold text-gray-700 text-white">{member.name}</h3>
                                     <p className="text-blue-100">{member.credentials}</p>
                                 </div>
                             </div>
 
                             <div className="p-6">
                                 <div className="mb-4">
-                                    <h4 className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-2">Specializations</h4>
+                                    <h4 className="text-sm font-semibold text-gray-700 uppercase tracking-wider mb-2">Specializations</h4>
                                     <div className="flex flex-wrap gap-2">
                                         {member.specializations.map((spec, index) => (
                                             <span key={index} className="bg-blue-50 text-blue-700 rounded-full px-3 py-1 text-xs">
@@ -232,14 +232,14 @@ const DetailedTeamSection = () => {
                                         <p className="text-blue-600 font-medium mb-4">{selectedMember.credentials}</p>
 
                                         <div className="mb-6">
-                                            <h4 className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-2">Category</h4>
+                                            <h4 className="text-sm font-semibold text-gray-700 uppercase tracking-wider mb-2">Category</h4>
                                             <div className="inline-flex items-center bg-blue-600 text-white px-3 py-1 rounded-full">
                                                 {selectedMember.category}
                                             </div>
                                         </div>
 
                                         <div className="mb-6">
-                                            <h4 className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-2">Specializations</h4>
+                                            <h4 className="text-sm font-semibold text-gray-700 uppercase tracking-wider mb-2">Specializations</h4>
                                             <div className="flex flex-wrap gap-2">
                                                 {selectedMember.specializations.map((spec, index) => (
                                                     <span key={index} className="bg-white text-blue-700 border border-blue-200 rounded-full px-3 py-1 text-xs">
@@ -264,7 +264,7 @@ const DetailedTeamSection = () => {
                                 {/* Right column: Detailed info */}
                                 <div className="md:w-2/3 p-6">
                                     <div className="mb-8">
-                                        <h4 className="flex items-center text-xl font-semibold text-gray-800 mb-3">
+                                        <h4 className="flex items-center text-xl font-semibold text-gray-700 mb-3">
                                             <FaGraduationCap className="mr-2 text-blue-600" />
                                             Educational Background
                                         </h4>
@@ -272,7 +272,7 @@ const DetailedTeamSection = () => {
                                     </div>
 
                                     <div className="mb-8">
-                                        <h4 className="flex items-center text-xl font-semibold text-gray-800 mb-3">
+                                        <h4 className="flex items-center text-xl font-semibold text-gray-700 mb-3">
                                             <FaAward className="mr-2 text-blue-600" />
                                             Academic Achievements
                                         </h4>
@@ -284,7 +284,7 @@ const DetailedTeamSection = () => {
                                     </div>
 
                                     <div>
-                                        <h4 className="flex items-center text-xl font-semibold text-gray-800 mb-3">
+                                        <h4 className="flex items-center text-xl font-semibold text-gray-700 mb-3">
                                             <FaChalkboardTeacher className="mr-2 text-blue-600" />
                                             Mentoring Philosophy
                                         </h4>

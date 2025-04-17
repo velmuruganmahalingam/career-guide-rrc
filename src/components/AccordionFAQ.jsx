@@ -52,7 +52,7 @@ const AccordionFAQ = () => {
                     className="w-full flex justify-between items-center text-left"
                     onClick={() => toggleCategory(key)}
                 >
-                    <h3 className="text-xl font-semibold text-gray-800">{title}</h3>
+                    <h3 className="text-xl font-semibold text-gray-700">{title}</h3>
                     <span className="text-2xl text-blue-500">
                         {isOpen ? '−' : '+'}
                     </span>

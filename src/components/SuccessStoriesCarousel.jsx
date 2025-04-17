@@ -33,10 +33,10 @@ const SuccessStoriesCarousel = () => {
     };
 
     return (
-        <section className="py-16 bg-white-50">
+        <section className="py-10 bg-white-50">
             <div className="max-w-7xl mx-auto px-4 text-center">
-                <h2 className="text-4xl font-bold text-gray-900 mb-6">Success Stories</h2>
-                <p className="text-lg text-gray-600 mb-6">
+                <h2 className="text-3xl font-bold text-gray-700 mb-6">Success Stories</h2>
+                <p className="text-sm text-gray-600">
                     Real experiences from students who found career clarity and achieved their dreams.
                 </p>
 
@@ -60,7 +60,7 @@ const SuccessStoriesCarousel = () => {
                                 </div>
 
                                 <p className="text-sm text-gray-600 mb-4">{story.description}</p>
-                                <h4 className="text-xl font-semibold text-gray-900">{story.outcome}</h4>
+                                <h4 className="text-xl font-semibold text-gray-700">{story.outcome}</h4>
                             </div>
                         </div>
                     ))}

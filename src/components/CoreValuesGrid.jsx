@@ -54,10 +54,10 @@ const values = [
 
 const CoreValuesGridWithImages = () => {
     return (
-        <section className="py-16 bg-white-50">
+        <section className="py-10 bg-white-50">
             <div className="max-w-7xl mx-auto px-4 text-center">
-                <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Core Values</h2>
-                <p className="text-lg text-gray-600 mb-12 max-w-2xl mx-auto">
+                <h2 className="text-3xl text-gray-700 font-bold mb-4">Our Core Values</h2>
+                <p className="text-sm text-gray-600 mb-4">
                     These principles guide our approach to mentorship and educational planning.
                 </p>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
@@ -69,7 +69,7 @@ const CoreValuesGridWithImages = () => {
                             <div className="flex items-center justify-center mb-4">
                                 {value.icon}
                             </div>
-                            <h3 className="text-xl font-semibold text-gray-800">{value.title}</h3>
+                            <h3 className="text-xl font-semibold text-gray-700">{value.title}</h3>
                             <p className="text-gray-600">{value.description}</p>
                         </div>
                     ))}

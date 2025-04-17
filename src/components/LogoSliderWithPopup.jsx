@@ -187,7 +187,7 @@ const LogoSliderWithPopup = ({ items, title = "Our Partners" }) => {
     return (
         <>
             <div className="max-w-7xl mx-auto px-4 py-10">
-                <h2 className="text-4xl font-bold mb-4 text-center">{title}</h2>
+                <h2 className="text-3xl text-gray-700 font-bold mb-4 text-center">{title}</h2>
                 <p className="text-gray-600 max-w-2xl mx-auto mb-10">
                     Learning doesn't happen in isolation.
                     We grow stronger with great partners.
@@ -244,7 +244,7 @@ const LogoSliderWithPopup = ({ items, title = "Our Partners" }) => {
                                     </div>
 
                                     <div className="flex flex-col justify-center p-4">
-                                        <h4 className="text-lg font-semibold">{item.name || 'College Name'}</h4>
+                                        <h4 className="text-lg text-gray-700 font-semibold">{item.name || 'College Name'}</h4>
                                         <p className="text-sm text-gray-600">{item.location || 'Location'}</p>
                                         <p className="text-sm text-gray-700 mt-1 line-clamp-2">
                                             {item.description || 'No description available'}
@@ -307,7 +307,7 @@ const LogoSliderWithPopup = ({ items, title = "Our Partners" }) => {
                         </div>
 
                         <div className="text-center mb-4">
-                            <h3 className="text-2xl font-semibold text-gray-900">{selectedItem.name || 'College Name'}</h3>
+                            <h3 className="text-2xl font-semibold text-gray-700">{selectedItem.name || 'College Name'}</h3>
                             <p className="text-sm text-gray-600">{selectedItem.location || 'Location'}</p>
                         </div>
 

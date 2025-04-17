@@ -75,7 +75,7 @@ export default function PastEventsSection() {
     return (
         <section ref={sectionRef} className="py-10 bg-gray-100 relative">
             <div className="max-w-7xl mx-auto px-4">
-                <h2 className="text-4xl font-bold mb-4 text-center">
+                <h2 className="text-3xl text-gray-700 font-bold mb-4 text-center">
                     Past Events
                 </h2>
 
@@ -100,7 +100,7 @@ export default function PastEventsSection() {
                                     className="w-full h-56 object-cover"
                                 />
                                 <div className="p-6">
-                                    <h3 className="text-xl font-semibold text-gray-800">
+                                    <h3 className="text-xl font-semibold text-gray-700">
                                         {event.title}
                                     </h3>
                                     <p className="text-gray-600 mt-2">{event.recap}</p>
