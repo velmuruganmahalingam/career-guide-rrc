@@ -151,7 +151,7 @@ export default function Blog() {
             <Navbar />
             <FeaturedBlogPost />
             <LatestArticles />
-            <section className="py-10 bg-gray-100">
+            <section className="py-10 bg-white-50">
                 <div className="max-w-7xl mx-auto px-4">
                     <h2 className="text-4xl font-bold mb-4 text-center">
                         Explore by Category
