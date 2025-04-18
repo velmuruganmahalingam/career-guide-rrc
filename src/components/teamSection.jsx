@@ -40,8 +40,8 @@ const teamMembers = [
 
 const TeamSection = () => {
     return (
-        <section className="bg-gray-50 py-10">
-            <div className="bg-gray-50 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 overflow-hidden">
+        <section className="bg-gray-100 py-10">
+            <div className="bg-gray-100 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 overflow-hidden">
                 <h2 className="text-3xl text-gray-700 font-bold mb-4 text-center">Meet the Mentors Behind RRC</h2>
                 <p className="text-gray-600 text-center max-w-2xl mx-auto mb-10">
                     Experts. Mentors. Innovators.

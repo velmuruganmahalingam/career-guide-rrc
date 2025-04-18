@@ -81,7 +81,7 @@ const EnquiryForm = () => {
     };
 
     return (
-        <section className="py-10  bg-white-50">
+        <section id="enquiry" className="py-10  bg-white-50">
             <div className="px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
                 <h2 className="text-3xl text-gray-700 font-bold mb-4 text-center">Let’s Guide Your Next Step</h2>
 

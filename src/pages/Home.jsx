@@ -1,5 +1,5 @@
 // src/pages/Home.jsx
-import React from "react";
+import React, { useEffect } from "react";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 import HeroSlider from "../components/herosection";
@@ -8,6 +8,7 @@ import CourseExplorer from "../components/CourseExplorer";
 import LogoSliderWithPopup from "../components/LogoSliderWithPopup";
 import TeamSection from "../components/teamSection";
 import EnquiryForm from "../components/EnquiryForm";
+import { useLocation } from "react-router-dom";
 
 import img1 from "../assets/1.jpeg";
 import img2 from "../assets/2.jpeg";
@@ -18,6 +19,8 @@ import { motion } from "framer-motion";
 import { FaEye, FaBullseye } from "react-icons/fa";
 
 const Home = () => {
+    const location = useLocation();
+
     const slides = [
         {
             title: "Welcome to RRC Career",
@@ -44,6 +47,18 @@ const Home = () => {
             ctaLink: "/demo",
         },
     ];
+
+    useEffect(() => {
+        const params = new URLSearchParams(location.search);
+        if (params.get("scrollTo") === "enquiry") {
+            const el = document.getElementById("enquiry")
+            if (el) {
+                setTimeout(() => {
+                    el.scrollIntoView({ behavior: "smooth" })
+                }, 200)
+            }
+        }
+    }, [location])
 
     return (
         <div className="relative">

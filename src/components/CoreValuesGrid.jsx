@@ -64,8 +64,7 @@ const CoreValuesGridWithImages = () => {
                     {values.map((value, index) => (
                         <div
                             key={index}
-                            className={`p-6 rounded-lg ${index % 2 === 0 ? 'bg-blue-200' : 'bg-blue-300'} transition-transform duration-300 transform hover:scale-105`}
-                        >
+                            className={`p-6 rounded-lg ${index % 2 === 0 ? 'bg-blue-200' : 'bg-blue-300'} transition-transform duration-300 transform hover:scale-105`}>
                             <div className="flex items-center justify-center mb-4">
                                 {value.icon}
                             </div>

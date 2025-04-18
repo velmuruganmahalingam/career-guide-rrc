@@ -73,7 +73,7 @@ const AccordionFAQ = () => {
     };
 
     return (
-        <section className="py-16 bg-white-50">
+        <section className="py-10 bg-white-50">
             <div className="max-w-7xl mx-auto px-4">
                 <h2 className="text-3xl font-bold text-gray-800 text-center mb-10">
                     Frequently Asked Questions

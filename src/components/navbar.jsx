@@ -8,10 +8,10 @@ const Navbar = () => {
     const mobileMenuRef = useRef(null);
 
     const navItems = [
-        { label: "Home", path: "/" },
-        { label: "About", path: "/about" },
-        { label: "Events", path: "/events" },
-        { label: "Blog", path: "/blog" },
+        { label: "Discover RRC", path: "/" },
+        { label: "How We Guide", path: "/about" },
+        { label: "Live Sessions	", path: "/events" },
+        { label: "Mindspace", path: "/blog" },
     ];
 
     useEffect(() => {
@@ -46,7 +46,7 @@ const Navbar = () => {
                         </Link>
                     ))}
                     <Link
-                        to="/get-started"
+                        to="/?scrollTo=enquiry"
                         className="bg-blue-600 text-white font-semibold px-4 py-2 rounded hover:bg-blue-700 transition"
                     >
                         Get Started

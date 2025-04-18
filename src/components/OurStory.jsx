@@ -22,7 +22,7 @@ const OurStorySection = () => {
     };
 
     return (
-        <section className="relative pt-5 pb-1 overflow-hidden bg-white-50">
+        <section className="relative pt-2 pb-1 overflow-hidden bg-white-50">
             {/* Background images */}
             <div className="absolute inset-0 z-0">
                 <div className="absolute inset-0"></div>
@@ -67,7 +67,8 @@ const OurStorySection = () => {
                     {timelineData.map((item, index) => (
                         <div
                             key={index}
-                            className={`mb-16 md:mb-24 ${index % 2 === 0 ? "md:ml-auto" : "md:mr-auto"}`}
+                            className={`${index !== timelineData.length - 1 ? "mb-16 md:mb-24" : "mb-7"
+                                } ${index % 2 === 0 ? "md:ml-auto" : "md:mr-auto"}`}
                         >
                             <div
                                 className="relative flex flex-col md:flex-row gap-8 bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
@@ -96,7 +97,9 @@ const OurStorySection = () => {
                                         ></div>
                                         <div className="absolute bottom-0 left-0 right-0 p-6 text-white z-20">
                                             <div className="inline-flex items-center bg-blue-600 bg-opacity-90 px-4 py-2 rounded-full mb-2">
-                                                {getIcon(index)}
+                                                {React.cloneElement(getIcon(index), {
+                                                    className: 'text-white text-3xl', // Change the icon size/color
+                                                })}
                                                 <span className="ml-2 font-medium">{item.title}</span>
                                             </div>
                                         </div>
@@ -127,8 +130,19 @@ const OurStorySection = () => {
                                         <span className="absolute right-0 -translate-x-full translate-y-0 rotate-45 transform opacity-30 transition-all duration-300 group-hover:translate-x-14 group-hover:translate-y-0"></span>
                                         <span className="absolute left-0 -translate-x-14 opacity-30 transition-all duration-300 group-hover:translate-x-full"></span>
                                         <span className="relative">Learn More</span>
-                                        <svg className="ml-2 h-5 w-5 transform transition-transform duration-300 ease-in-out group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                                        <svg
+                                            className="ml-2 h-5 w-5 transform transition-transform duration-300 ease-in-out group-hover:translate-x-1 text-white"
+                                            fill="currentColor"
+                                            stroke="currentColor"
+                                            viewBox="0 0 24 24"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                strokeLinecap="round"
+                                                strokeLinejoin="round"
+                                                strokeWidth="2"
+                                                d="M14 5l7 7m0 0l-7 7m7-7H3"
+                                            ></path>
                                         </svg>
                                     </button>
                                 </div>
