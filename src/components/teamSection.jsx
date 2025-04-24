@@ -24,12 +24,12 @@ const teamMembers = [
         designation: "Mentor",
         photo: team2,
     },
-    {
-        name: "Jeeva.S",
-        qualification: "MBA",
-        designation: "Mentor",
-        photo: team4,
-    },
+    // {
+    //     name: "Jeeva.S",
+    //     qualification: "MBA",
+    //     designation: "Mentor",
+    //     photo: team4,
+    // },
     {
         name: "Ramya.N",
         qualification: "M.Sc, B.Ed.",

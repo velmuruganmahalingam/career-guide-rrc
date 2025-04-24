@@ -186,169 +186,171 @@ const LogoSliderWithPopup = ({ items, title = "Our Partners" }) => {
 
     return (
         <>
-            <div className="max-w-7xl mx-auto px-4 py-10">
-                <h2 className="text-3xl text-gray-700 font-bold mb-4 text-center">{title}</h2>
-                <p className="text-gray-600 max-w-2xl mx-auto mb-10">
-                    Learning doesn't happen in isolation.
-                    We grow stronger with great partners.
-                    The journey of knowledge acquisition flourishes through meaningful collaboration and shared experiences.
-                </p>
+            <section className="bg-white-50">
+                <div className="max-w-7xl mx-auto px-4 py-10">
+                    <h2 className="text-3xl text-gray-700 font-bold mb-4 text-center">{title}</h2>
+                    <p className="text-gray-600 max-w-2xl mx-auto mb-10">
+                        Learning doesn't happen in isolation.
+                        We grow stronger with great partners.
+                        The journey of knowledge acquisition flourishes through meaningful collaboration and shared experiences.
+                    </p>
 
-                <div className="overflow-hidden mt-2">
-                    <div
-                        ref={scrollRef}
-                        onMouseEnter={() => setScrollPaused(true)}
-                        onMouseLeave={() => {
-                            if (!isDragging.current) {
-                                setScrollPaused(false);
-                            }
-                        }}
-                        className="flex space-x-6 overflow-x-auto scrollbar-hide pb-4 select-none"
-                        style={{
-                            scrollBehavior: "auto",
-                            minWidth: "100%",
-                            scrollbarWidth: "none",
-                            msOverflowStyle: "none",
-                            cursor: "grab"
-                        }}>
-                        {fetchItem.length > 0 ? (
-                            fetchItem.map((item, idx) => (
-                                <div
-                                    key={idx}
-                                    onClick={() => handleCardClick(item)}
-                                    className="min-w-[480px] max-w-[480px] flex bg-white rounded-lg hover:scale-105 transition-transform duration-300 border border-gray-100"
-                                    style={{
-                                        boxShadow: "0 4px 12px rgba(0,0,0,0.05)",
-                                    }}
-                                >
-                                    <div className="flex-shrink-0 p-4">
-                                        <div className="w-24 h-24 flex items-center justify-center bg-gray-100 rounded-lg">
-                                            {(() => {
-                                                const key = item.id ?? idx;
-
-                                                return imageLoadError[key] ? (
-                                                    <span className="text-3xl font-bold text-gray-400">
-                                                        {item.name?.charAt(0) || 'C'}
-                                                    </span>
-                                                ) : (
-                                                    <img
-                                                        src={formatImageUrl(item.logo?.main)}
-                                                        alt={item.name || 'College Logo'}
-                                                        className="w-24 h-24 object-contain mx-auto"
-                                                        onError={() => handleImageError(key)}
-                                                        onLoad={() => console.log(`Image loaded for ${item.name}`)}
-                                                    />
-                                                );
-                                            })()}
-                                        </div>
-                                    </div>
-
-                                    <div className="flex flex-col justify-center p-4">
-                                        <h4 className="text-lg text-gray-700 font-semibold">{item.name || 'College Name'}</h4>
-                                        <p className="text-sm text-gray-600">{item.location || 'Location'}</p>
-                                        <p className="text-sm text-gray-700 mt-1 line-clamp-2">
-                                            {item.description || 'No description available'}
-                                        </p>
-                                    </div>
-                                </div>
-                            ))
-                        ) : (
-                            Array(3).fill(0).map((_, idx) => (
-                                <div
-                                    key={idx}
-                                    className="min-w-[480px] max-w-[480px] flex bg-white rounded-lg border border-gray-100"
-                                    style={{
-                                        boxShadow: "0 4px 12px rgba(0,0,0,0.05)",
-                                    }}
-                                >
-                                    <div className="flex-shrink-0 p-4">
-                                        <div className="w-24 h-24 bg-gray-200 rounded-lg animate-pulse"></div>
-                                    </div>
-                                    <div className="flex flex-col justify-center p-4 space-y-2 w-full">
-                                        <div className="h-5 bg-gray-200 rounded animate-pulse w-3/4"></div>
-                                        <div className="h-4 bg-gray-200 rounded animate-pulse w-2/4"></div>
-                                        <div className="h-4 bg-gray-200 rounded animate-pulse w-full"></div>
-                                    </div>
-                                </div>
-                            ))
-                        )}
-                    </div>
-                </div>
-            </div>
-
-            {selectedItem && (
-                <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50">
-                    <div className="bg-white p-8 rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto relative shadow-2xl">
-                        <button
-                            onClick={() => {
-                                setSelectedItem(null);
-                                setOpenCategory(null);
+                    <div className="overflow-hidden mt-2">
+                        <div
+                            ref={scrollRef}
+                            onMouseEnter={() => setScrollPaused(true)}
+                            onMouseLeave={() => {
+                                if (!isDragging.current) {
+                                    setScrollPaused(false);
+                                }
                             }}
-                            className="absolute top-3 right-4 text-gray-600 hover:text-black text-2xl font-bold"
-                        >
-                            &times;
-                        </button>
+                            className="flex space-x-6 overflow-x-auto scrollbar-hide pb-4 select-none"
+                            style={{
+                                scrollBehavior: "auto",
+                                minWidth: "100%",
+                                scrollbarWidth: "none",
+                                msOverflowStyle: "none",
+                                cursor: "grab"
+                            }}>
+                            {fetchItem.length > 0 ? (
+                                fetchItem.map((item, idx) => (
+                                    <div
+                                        key={idx}
+                                        onClick={() => handleCardClick(item)}
+                                        className="min-w-[500px] max-w-[500px] flex bg-white rounded-lg hover:scale-105 transition-transform duration-300 border border-gray-100"
+                                        style={{
+                                            boxShadow: "0 4px 12px rgba(5, 5, 5, 0.2)",
+                                        }}
+                                    >
+                                        <div className="flex-shrink-0 p-4">
+                                            <div className="w-24 h-24 flex items-center justify-center bg-gray-100 rounded-lg">
+                                                {(() => {
+                                                    const key = item.id ?? idx;
 
-                        <div className="flex justify-center mb-4">
-                            <div className="h-24 w-24 flex items-center justify-center bg-gray-100 rounded-full shadow">
-                                {imageLoadError[selectedItem.id] ? (
-                                    <span className="text-3xl font-bold text-gray-400">
-                                        {selectedItem.name?.charAt(0) || 'C'}
-                                    </span>
-                                ) : (
-                                    <img
-                                        src={formatImageUrl(selectedItem.logo?.main)}
-                                        alt={selectedItem.name || 'College Logo'}
-                                        className="h-24 w-24 object-contain rounded-full"
-                                        onError={() => handleImageError(selectedItem.id)}
-                                    />
-                                )}
-                            </div>
-                        </div>
-
-                        <div className="text-center mb-4">
-                            <h3 className="text-2xl font-semibold text-gray-700">{selectedItem.name || 'College Name'}</h3>
-                            <p className="text-sm text-gray-600">{selectedItem.location || 'Location'}</p>
-                        </div>
-
-                        <p className="text-gray-700 text-center mb-6">{selectedItem.description || 'No description available'}</p>
-
-                        {selectedItem.courses && selectedItem.courses.length > 0 && (() => {
-                            const courseCategories = selectedItem.courses.reduce((acc, course) => {
-                                const category = course.category || "Others";
-                                if (!acc[category]) acc[category] = [];
-                                acc[category].push(course.name);
-                                return acc;
-                            }, {});
-
-                            return (
-                                <div className="max-h-64 overflow-y-auto pr-1">
-                                    {Object.entries(courseCategories).map(([category, courses]) => (
-                                        <div key={category} className="mb-4 border border-gray-200 rounded-lg">
-                                            <button
-                                                onClick={() =>
-                                                    setOpenCategory(openCategory === category ? null : category)
-                                                }
-                                                className="w-full flex justify-between items-center px-4 py-2 text-left bg-gray-100 hover:bg-gray-200 rounded-t-lg font-semibold text-blue-600"
-                                            >
-                                                {category}
-                                                <span>{openCategory === category ? "−" : "+"}</span>
-                                            </button>
-                                            {openCategory === category && (
-                                                <ul className="px-6 py-3 grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-1 list-disc list-inside text-gray-700 text-sm bg-white rounded-b-lg">
-                                                    {courses.map((courseName, idx) => (
-                                                        <li key={idx}>{courseName}</li>
-                                                    ))}
-                                                </ul>
-                                            )}
+                                                    return imageLoadError[key] ? (
+                                                        <span className="text-3xl font-bold text-gray-400">
+                                                            {item.name?.charAt(0) || 'C'}
+                                                        </span>
+                                                    ) : (
+                                                        <img
+                                                            src={formatImageUrl(item.logo?.main)}
+                                                            alt={item.name || 'College Logo'}
+                                                            className="w-24 h-24 object-contain mx-auto"
+                                                            onError={() => handleImageError(key)}
+                                                            onLoad={() => console.log(`Image loaded for ${item.name}`)}
+                                                        />
+                                                    );
+                                                })()}
+                                            </div>
                                         </div>
-                                    ))}
-                                </div>
-                            );
-                        })()}
+
+                                        <div className="flex flex-col justify-center p-4">
+                                            <h4 className="text-lg text-gray-700 font-semibold">{item.name || 'College Name'}</h4>
+                                            <p className="text-sm text-gray-600">{item.location || 'Location'}</p>
+                                            <p className="text-sm text-gray-700 mt-1 line-clamp-2">
+                                                {item.description || 'No description available'}
+                                            </p>
+                                        </div>
+                                    </div>
+                                ))
+                            ) : (
+                                Array(3).fill(0).map((_, idx) => (
+                                    <div
+                                        key={idx}
+                                        className="min-w-[480px] max-w-[480px] flex bg-white rounded-lg border border-gray-100"
+                                        style={{
+                                            boxShadow: "0 4px 12px rgba(0,0,0,0.05)",
+                                        }}
+                                    >
+                                        <div className="flex-shrink-0 p-4">
+                                            <div className="w-24 h-24 bg-gray-200 rounded-lg animate-pulse"></div>
+                                        </div>
+                                        <div className="flex flex-col justify-center p-4 space-y-2 w-full">
+                                            <div className="h-5 bg-gray-200 rounded animate-pulse w-3/4"></div>
+                                            <div className="h-4 bg-gray-200 rounded animate-pulse w-2/4"></div>
+                                            <div className="h-4 bg-gray-200 rounded animate-pulse w-full"></div>
+                                        </div>
+                                    </div>
+                                ))
+                            )}
+                        </div>
                     </div>
                 </div>
-            )}
+
+                {selectedItem && (
+                    <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50">
+                        <div className="bg-white p-8 rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto relative shadow-2xl">
+                            <button
+                                onClick={() => {
+                                    setSelectedItem(null);
+                                    setOpenCategory(null);
+                                }}
+                                className="absolute top-3 right-4 text-gray-600 hover:text-black text-2xl font-bold"
+                            >
+                                &times;
+                            </button>
+
+                            <div className="flex justify-center mb-4">
+                                <div className="h-24 w-24 flex items-center justify-center bg-gray-100 rounded-full shadow">
+                                    {imageLoadError[selectedItem.id] ? (
+                                        <span className="text-3xl font-bold text-gray-400">
+                                            {selectedItem.name?.charAt(0) || 'C'}
+                                        </span>
+                                    ) : (
+                                        <img
+                                            src={formatImageUrl(selectedItem.logo?.main)}
+                                            alt={selectedItem.name || 'College Logo'}
+                                            className="h-24 w-24 object-contain rounded-full"
+                                            onError={() => handleImageError(selectedItem.id)}
+                                        />
+                                    )}
+                                </div>
+                            </div>
+
+                            <div className="text-center mb-4">
+                                <h3 className="text-2xl font-semibold text-gray-700">{selectedItem.name || 'College Name'}</h3>
+                                <p className="text-sm text-gray-600">{selectedItem.location || 'Location'}</p>
+                            </div>
+
+                            <p className="text-gray-700 text-center mb-6">{selectedItem.description || 'No description available'}</p>
+
+                            {selectedItem.courses && selectedItem.courses.length > 0 && (() => {
+                                const courseCategories = selectedItem.courses.reduce((acc, course) => {
+                                    const category = course.category || "Others";
+                                    if (!acc[category]) acc[category] = [];
+                                    acc[category].push(course.name);
+                                    return acc;
+                                }, {});
+
+                                return (
+                                    <div className="max-h-64 overflow-y-auto pr-1">
+                                        {Object.entries(courseCategories).map(([category, courses]) => (
+                                            <div key={category} className="mb-4 border border-gray-200 rounded-lg">
+                                                <button
+                                                    onClick={() =>
+                                                        setOpenCategory(openCategory === category ? null : category)
+                                                    }
+                                                    className="w-full flex justify-between items-center px-4 py-2 text-left bg-gray-100 hover:bg-gray-200 rounded-t-lg font-semibold text-blue-600"
+                                                >
+                                                    {category}
+                                                    <span>{openCategory === category ? "−" : "+"}</span>
+                                                </button>
+                                                {openCategory === category && (
+                                                    <ul className="px-6 py-3 grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-1 list-disc list-inside text-gray-700 text-sm bg-white rounded-b-lg">
+                                                        {courses.map((courseName, idx) => (
+                                                            <li key={idx}>{courseName}</li>
+                                                        ))}
+                                                    </ul>
+                                                )}
+                                            </div>
+                                        ))}
+                                    </div>
+                                );
+                            })()}
+                        </div>
+                    </div>
+                )}
+            </section>
         </>
     );
 };

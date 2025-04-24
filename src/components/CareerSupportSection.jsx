@@ -5,7 +5,7 @@ import { FaMapSigns, FaBrain, FaUserCheck, FaChartLine, FaTools, FaLightbulb, Fa
 
 const CareerSupportSection = () => {
     return (
-        <section className="py-5 bg-white-50">
+        <section className="py-8 bg-gray-100">
             <div className="max-w-7xl mx-auto px-4">
                 <div className="text-center mb-12">
                     <h2 className="text-3xl text-gray-700 font-bold mb-4">Our Services & Career Support Pathway</h2>
@@ -17,7 +17,7 @@ const CareerSupportSection = () => {
                 {/* Second ServiceBlock - Image on right, text on left (reverse) */}
                 <ServiceBlock
                     image={img1}
-                    title="Domestic Study Support"
+                    title="Domestic Education Guidance"
                     description="Get expert guidance to choose the right colleges, prepare effectively for entrance exams, and manage your time and resources wisely. Our support ensures you're well-equipped to navigate India’s academic landscape with clarity and confidence. We help you overcome academic stress, stay focused, and set realistic goals that lead to long-term success."
                     buttonLabel="Know More"
                     buttonStyle="bg-yellow-500 text-white hover:bg-yellow-600"
@@ -33,7 +33,7 @@ const CareerSupportSection = () => {
                 {/* Third ServiceBlock - Image on left, text on right */}
                 <ServiceBlock
                     image={img2}
-                    title="International Study Support"
+                    title="International Study Consultation"
                     description="Get expert guidance to choose the right colleges, prepare effectively for entrance exams, and manage your time and resources wisely. Our support ensures you're well-equipped to navigate India’s academic landscape with clarity and confidence. We help you overcome academic stress, stay focused, and set realistic goals that lead to long-term success."
                     buttonLabel="Know More"
                     buttonStyle="bg-green-500 text-white hover:bg-green-600"

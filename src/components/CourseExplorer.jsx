@@ -116,7 +116,7 @@ const CourseExplorer = () => {
     };
 
     return (
-        <section className="py-10 bg-gray-100">
+        <section className="py-10 bg-white-50">
             <div className="max-w-7xl mx-auto px-4">
                 <motion.div
                     className="text-center mb-8"
@@ -126,6 +126,9 @@ const CourseExplorer = () => {
                     viewport={{ once: true }}
                 >
                     <h2 className="text-3xl text-gray-700 font-bold mb-4">Explore Our Courses</h2>
+                    <p className="text-gray-600 max-w-2xl mx-auto">
+                        Discover a wide range of academic pathways suited for students from different educational levels. Whether you're in high school, recently completed SSLC, or exploring undergraduate options — we provide guidance for programs that align with your interests, strengths, and future goals.
+                    </p>
                 </motion.div>
 
                 <div className="flex justify-center mb-12">

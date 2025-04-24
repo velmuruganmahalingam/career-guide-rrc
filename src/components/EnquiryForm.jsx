@@ -81,10 +81,12 @@ const EnquiryForm = () => {
     };
 
     return (
-        <section id="enquiry" className="py-10  bg-white-50">
+        <section id="enquiry" className="py-10  bg-gray-100">
             <div className="px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-                <h2 className="text-3xl text-gray-700 font-bold mb-4 text-center">Let’s Guide Your Next Step</h2>
-
+                <h2 className="text-3xl text-gray-700 font-bold mb-4 text-center">Let’s Connect</h2>
+                <p className="text-gray-600 text-center max-w-2xl mx-auto">
+                    We’re here to guide you. Fill out the form below, and our team will contact you shortly for a free consultation session.
+                </p>
                 <form
                     onSubmit={handleSubmit}
                     className="bg-gray-100 p-6 rounded-xl shadow space-y-4">
