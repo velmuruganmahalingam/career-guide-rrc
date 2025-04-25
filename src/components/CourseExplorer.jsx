@@ -158,7 +158,7 @@ const CourseExplorer = () => {
                             .map((category) => (
                                 <motion.div
                                     key={category._id || category.id}
-                                    className="bg-white rounded-lg shadow-sm border border-gray-100 p-4 hover:shadow-md transition-shadow flex flex-col"
+                                    className="bg-white rounded-lg shadow-md border border-gray-100 p-4 hover:shadow-md transition-shadow flex flex-col"
                                     initial={{ opacity: 0, y: 20 }}
                                     whileInView={{ opacity: 1, y: 0 }}
                                     transition={{ duration: 0.5 }}

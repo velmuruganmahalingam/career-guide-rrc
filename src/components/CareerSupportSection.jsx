@@ -1,6 +1,7 @@
 import ServiceBlock from "./ServiceBlock";
-import img1 from "../assets/ic.jpg";
-import img2 from "../assets/inc.jpg";
+import img1 from "../assets/dmstd1.jpg";
+import img2 from "../assets/instd.jpg";
+import img3 from "../assets/crex.jpg";
 import { FaMapSigns, FaBrain, FaUserCheck, FaChartLine, FaTools, FaLightbulb, FaPlaneDeparture, FaCompass } from "react-icons/fa";
 
 const CareerSupportSection = () => {
@@ -17,6 +18,7 @@ const CareerSupportSection = () => {
                 {/* Second ServiceBlock - Image on right, text on left (reverse) */}
                 <ServiceBlock
                     image={img1}
+                    className="w-full h-auto object-cover object-center rounded-xl"
                     title="Domestic Education Guidance"
                     description="Get expert guidance to choose the right colleges, prepare effectively for entrance exams, and manage your time and resources wisely. Our support ensures you're well-equipped to navigate India’s academic landscape with clarity and confidence. We help you overcome academic stress, stay focused, and set realistic goals that lead to long-term success."
                     buttonLabel="Know More"
@@ -47,7 +49,7 @@ const CareerSupportSection = () => {
                 />
 
                 <ServiceBlock
-                    image="https://images.pexels.com/photos/3184328/pexels-photo-3184328.jpeg"
+                    image={img3}
                     title="Explore Your Career Options"
                     description="We are dedicated to helping students and professionals discover the best-fit career options through personalized guidance, expert mentorship, and industry-aligned assessments. Our goal is to unlock your full potential and build a career path tailored to your strengths. From awareness to action, we empower you to make confident and informed decisions."
                     buttonLabel="Learn More"

@@ -9,11 +9,10 @@ import TeamSection from "../components/teamSection";
 import EnquiryForm from "../components/EnquiryForm";
 import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
-
-import img1 from "../assets/1.jpeg";
-import img2 from "../assets/2.jpeg";
-import img3 from "../assets/3.jpeg";
-import mnt from "../assets/mnt.png"
+import sl3 from "../assets/sl3.jpeg";
+import mnt from "../assets/mnt.png";
+import s1 from "../assets/sl1.jpeg"
+import s2 from "../assets/sl2.jpeg"
 
 import { motion } from "framer-motion";
 
@@ -25,7 +24,7 @@ const Home = () => {
             title: "Empowering Students with Clarity, Direction, and Support",
             subtitle:
                 " We offer expert career counseling and academic guidance for students in school, college, and beyond. Whether you're looking to study in India or overseas, RRC Academic Mentors helps you choose the right path forward.",
-            image: img1,
+            image: s1,
             ctaText: "Get Started",
             ctaLink: "/get-started",
         },
@@ -33,7 +32,7 @@ const Home = () => {
             title: "Your Future, Your Choice — We're With You",
             subtitle:
                 "Explore top academic institutions across India and internationally. Our consultants help you identify the right programs, prepare applications, and manage the entire admission process with ease.",
-            image: img2,
+            image: s2,
             ctaText: "Learn More",
             ctaLink: "/about",
         },
@@ -41,7 +40,7 @@ const Home = () => {
             title: "Plan Your Academic Journey With Confidence",
             subtitle:
                 "Through personalized one-on-one sessions, we help students discover their strengths, explore options, and make informed decisions about their career and academic future.",
-            image: img3,
+            image: sl3,
             ctaText: "Explore More",
             ctaLink: "/demo",
         },
